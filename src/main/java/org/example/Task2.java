@@ -16,6 +16,8 @@ public class Task2 {
             initialList = getData(sc);
         } while (initialList.size() < 2);
 
+        sc.close();
+
         List<int[]> pairs = Helpers.getPairs(initialList);
         if (pairs.isEmpty()){
             System.out.println("Not found pairs that sum up to 13.");
