@@ -18,7 +18,7 @@ public class Task2 {
 
         List<int[]> pairs = Helpers.getPairs(initialList);
         if (pairs.isEmpty()){
-            System.out.println("Not found.");
+            System.out.println("Not found pairs that sum up to 13.");
             return;
         }
 
