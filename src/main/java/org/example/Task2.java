@@ -14,9 +14,13 @@ public class Task2 {
         List<Integer> initialList;
         do {
             initialList = getData(sc);
-        } while (initialList.isEmpty());
+        } while (initialList.size() < 2);
 
         List<int[]> pairs = Helpers.getPairs(initialList);
+        if (pairs.isEmpty()){
+            System.out.println("Not found.");
+            return;
+        }
 
         for(int[] pair : pairs) {
             System.out.println(pair[0]+" "+pair[1]);
@@ -24,7 +28,7 @@ public class Task2 {
     }
 
     private static List<Integer> getData(Scanner sc) {
-        System.out.println("Provide list of integers (seperated by space)");
+        System.out.println("Provide list of at least 2 integers (seperated by space)");
         try {
             return Stream.of(sc.nextLine()
                             .trim()
