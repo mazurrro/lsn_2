@@ -6,6 +6,6 @@ Maven: Apache Maven 3.6.3
 
 To run project:
 
-Open command line and go to the directory with project ..\Task2
+Open command line and go to the directory with project.
 Build package by running following command: mvn clean package
 Start application - Run command: java -jar target/Task2-1.0.jar
